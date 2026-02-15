@@ -1,16 +1,13 @@
-# dio_with_rest_flutter
 
-A new Flutter project.
 
-## Getting Started
+step 1 => creating productmodel in domain layer to get all products 
+step 2 => creating repository contract in domain layer to get all products
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+abstract class ProductRepository {
+Future<List<Product>> getProducts();
+Future<void> addProduct(Product product);
+}
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+step 3 => creating usecase in domain layer to get all products
