@@ -13,3 +13,5 @@ Future<void> addProduct(Product product);
 step 3 => creating usecase in domain layer to get all products
 
 app is not working
+
+i will learn dio tommorow to fetch data from api and then i will implement it in my app
